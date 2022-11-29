@@ -1,0 +1,49 @@
+[
+  {
+    "type": "section",
+    "text": {
+      "type": "mrkdwn",
+      "text": "Congratulations <@Person> ! \n You have been selected for the following task:"
+    }
+  },
+  {
+    "type": "divider"
+  },
+  {
+    "type": "section",
+    "text": {
+      "type": "mrkdwn",
+      "text": ":star: *FOOD* :star:"
+    }
+  },
+  {
+    "type": "divider"
+  },
+  {
+    "type": "section",
+    "text": {
+      "type": "mrkdwn",
+      "text": "Pick a restaurant on Deliveroo:"
+    },
+    "accessory": {
+      "type": "image",
+      "image_url": "https://cwa.roocdn.com/_next/static/favicon-32x32.9ac59871.png",
+      "alt_text": "alt text for image"
+    }
+  },
+  {
+    "type": "actions",
+    "elements": [
+      {
+        "type": "button",
+        "text": {
+          "type": "plain_text",
+          "text": "Deliveroo",
+          "emoji": true
+        },
+        "value": "link_to_deliveroo",
+        "url": "https://deliveroo.be"
+      }
+    ]
+  }
+]

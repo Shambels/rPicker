@@ -1,0 +1,25 @@
+{
+  "options": [
+    {
+      "text": {
+        "type": "plain_text",
+        "text": "*azertyuiop*"
+      },
+      "value": "azerty"
+    },
+    {
+      "text": {
+        "type": "plain_text",
+        "text": "FOOD"
+      },
+      "value": "food"
+    },
+    {
+      "text": {
+        "type": "plain_text",
+        "text": "*this is plain_text text*"
+      },
+      "value": "value-2"
+    }
+  ]
+}
