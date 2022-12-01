@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Slackbot random Picker",
   "main": "app.js",
+  "type": "module",
   "scripts": {
     "start": "node app.js"
   },
@@ -10,6 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "@slack/bolt": "^3.12.2",
-    "dotenv": "^16.0.3"
+    "config": "^3.3.8",
+    "dotenv": "^16.0.3",
+    "pg": "^8.8.0"
   }
 }

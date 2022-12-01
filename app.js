@@ -1,7 +1,8 @@
-const { App } = require('@slack/bolt');
-var dotenv = require("dotenv")
-dotenv.config()
-const mountRoutes = require('./routes.js')
+
+import bolt from "@slack/bolt";
+const { App } = bolt;
+import config from "config";
+import { mountRoutes } from "./routes.js";
 
 const app = new App({
   signingSecret: process.env.SLACK_SIGNING_SECRET,
@@ -12,5 +13,5 @@ const app = new App({
 
 
 mountRoutes(app)
-app.start(process.env.PORT || 3000);
+app.start(config.get('app.port'));
 console.log('⚡️ Bolt app is running!');
