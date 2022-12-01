@@ -1,8 +1,8 @@
 class RandomPickerService {
-  // constructor(task, users) {
-  //   this.task = task
-  //   this.users = users
-  // }
+  constructor(task, users) {
+    this.task = task
+    this.users = users
+  }
 
   pick_random(users, task) {
     // filter through given users to find those with lowest count
@@ -23,3 +23,5 @@ class RandomPickerService {
     return array[Math.floor(Math.random() * array.length)]
   }
 }
+
+export default RandomPickerService

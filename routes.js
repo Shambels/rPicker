@@ -1,6 +1,6 @@
-const ApplicationController = require('./controllers/application_controller.js')
+import ApplicationController from "./controllers/application_controller.js"
 
-const mountRoutes = app => {
+export const mountRoutes = app => {
   app.command('/pick', async ({ ack, payload, client }) => {
     ApplicationController.openPicker(ack, payload, client)
   })
@@ -14,4 +14,3 @@ const mountRoutes = app => {
   })
   
 }
-module.exports = mountRoutes

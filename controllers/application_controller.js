@@ -1,6 +1,6 @@
-const modal_input = require('../views/modal_input.json')
-const tasks = require('../views/tasks.json')
-const RandomPickerService = require('../services/random_picker_service.js')
+import modal_input from "../views/modal_input.json" assert { type: "json" };
+import tasks from "../views/tasks.json" assert { type: "json" };
+import RandomPickerService from "../services/random_picker_service.js"
 class ApplicationController {
   static async openPicker(ack, payload, client) {
     ack()
@@ -55,4 +55,4 @@ class ApplicationController {
   }
 }
 
-module.exports = ApplicationController
+export default ApplicationController
