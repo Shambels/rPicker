@@ -1,8 +1,9 @@
 
-import bolt from "@slack/bolt";
+import bolt from '@slack/bolt';
 const { App } = bolt;
-import config from "config";
-import { mountRoutes } from "./routes.js";
+import config from 'config';
+import { mountRoutes } from './routes.js';
+import dbConnection from './db/database_service.js';
 
 const app = new App({
   signingSecret: process.env.SLACK_SIGNING_SECRET,
