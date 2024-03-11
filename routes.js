@@ -1,4 +1,4 @@
-import ApplicationController from "./controllers/application_controller.js"
+import ApplicationController from './controllers/application_controller.js'
 
 export const mountRoutes = app => {
   app.command('/pick', async ({ ack, payload, client }) => {

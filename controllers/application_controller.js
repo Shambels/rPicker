@@ -1,6 +1,6 @@
-import modal_input from "../views/modal_input.json" assert { type: "json" };
-import tasks from "../views/tasks.json" assert { type: "json" };
-import RandomPickerService from "../services/random_picker_service.js"
+import modal_input from '../views/modal_input.json' assert { type: 'json' };
+import tasks from '../views/tasks.json' assert { type: 'json' };
+import RandomPickerService from '../services/random_picker_service.js'
 class ApplicationController {
   static async openPicker(ack, payload, client) {
     ack()
@@ -23,7 +23,7 @@ class ApplicationController {
     }
 
       await ack({
-        "options": matching_options
+        'options': matching_options
       });
   }
 
@@ -38,16 +38,17 @@ class ApplicationController {
     // Task.find(task)
     // users.where(users)
 
-    // let winner = RandomPickerService.pick_random(users, task)
+    let winner = RandomPickerService.pick_random(users, task)
 
-    let winner = "<@U04CKVCPWCA>"
+
+    // let winner = '<@U04CKVCPWCA>'
     let message = `task =${task}, users = ${users}, winner=${winner}`
 
     let blocks = require('../views/results.json')
-    // console.log("🚀 ~ file: application_controller.js ~ line 38 ~ ApplicationController ~ submitModal ~ message", message)
+    // console.log('🚀 ~ file: application_controller.js ~ line 38 ~ ApplicationController ~ submitModal ~ message', message)
     app.client.chat.postMessage(
       {
-        channel: "general",
+        channel: 'general',
         blocks: blocks
         // text: message
       })
